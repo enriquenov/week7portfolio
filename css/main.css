@@ -1,0 +1,169 @@
+body {
+  font-family: 'Roboto';
+  /*overflow: hidden;*/
+}
+
+/*-----------------------------------COVER AREA---------*/
+
+div.greeting p {
+  margin: 240px 64px 0;
+  font-size: 21px;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+div.jumbotron h1 span {
+  color: coral;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.jumbotron h1 {
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-delay: 1s;
+}
+
+.jumbotron p {
+  font-weight: 400;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-delay: 1.5s;
+}
+
+ul.sidebar {
+  height: 600px;
+  margin-top: 130px;
+}
+
+ul.sidebar li {
+  list-style: none;
+  margin: 0 0 80px;
+  text-decoration: none;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 2.2s;
+}
+
+ul.sidebar li.right1 {
+  margin-left: 65px;
+}
+
+ul.sidebar li.right2 {
+  margin-left: 250px;
+}
+
+ul.sidebar li.right3 {
+  margin-left: 140px;
+}
+
+ul.sidebar li.right4 {
+  margin-left: 260px;
+}
+
+ul.sidebar li.right5 {
+  margin-left: 100px;
+}
+
+ul.sidebar li a {
+  border-left: 1px groove coral;
+  color: dimgrey;
+  font-size: 25px;
+  opacity: 0.8;
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+
+ul.sidebar li a:hover {
+  border-bottom: 1.1px groove coral;
+  opacity: 1;
+  text-decoration: none;
+}
+
+ul.sidebar li.right1 a:hover {
+  color: #F8C787;
+}
+
+ul.sidebar li.right2 a:hover {
+  color: #80C892;
+}
+
+ul.sidebar li.right3 a:hover {
+  color: #E1BC6F;
+}
+
+ul.sidebar li.right4 a:hover {
+  color: #3987BE;
+}
+
+ul.sidebar li.right5 a:hover {
+  color: #BE6139;
+}
+
+/*----------------------------- PROJECTS */
+
+div.projects1, div.projects2 {
+  margin-top: 120px;
+}
+
+div.col-xs-6 {
+  text-align: center;
+}
+
+div.col-xs-6 a img {
+  height: auto;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+.moreprojects {
+  text-align: center;
+}
+
+.moreprojects button {
+  border: none;
+  background: none;
+  color: #80C892;
+  font-size: 28px;
+  opacity: 1;
+  outline: none;
+  text-decoration: none;
+  -webkit-animation-duration: 1.5s;
+}
+
+.moreprojects button:hover {
+  font-size: 32px;
+}
+
+div.moreprojects a {
+  text-decoration: none;
+}
+
+div.moreprojects a i {
+  color: #80C892;
+  display: none;
+  margin: 0 7px;
+}
+
+div.moreprojects a.active i.fa-circle-o {
+  background-color: blue;
+}
+
+div.projects2 {
+  display: none;
+}
+
+
+/*---------------------------------MEDIA QUERIES -----------*/
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 20px;
+  }
+
+  .jumbotron p {
+    margin-left: 5px;
+    margin-top: 40px;
+  }
+}
