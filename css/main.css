@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto';
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
-/*-----------------------------------COVER AREA---------*/
+/*-----------------------------------HOME---------*/
 
 div.greeting p {
   margin: 240px 64px 0;
@@ -76,7 +76,7 @@ ul.sidebar li a {
 }
 
 ul.sidebar li a:hover {
-  border-bottom: 1.1px groove coral;
+  /*border-bottom: 1.1px groove coral;*/
   opacity: 1;
   text-decoration: none;
 }
@@ -101,58 +101,132 @@ ul.sidebar li.right5 a:hover {
   color: #BE6139;
 }
 
-/*----------------------------- PROJECTS */
+/*----------------------------------------- PROJECTS */
 
-div.projects1, div.projects2 {
+div.projects1 {
   margin-top: 120px;
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 0.1s;
 }
 
 div.col-xs-6 {
   text-align: center;
 }
 
+/*DELETE*/
 div.col-xs-6 a img {
   height: auto;
   margin-bottom: 50px;
   width: 90%;
 }
+/*DELETE*/
 
-.moreprojects {
+a div.col-xs-6 {
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100% 100%;
+  height: 200px;
+  margin: 0 35px 50px;
+  width: 41%;
+}
+
+a div.col-xs-6.project1 {
+  background-image: url("http://webneel.com/daily/sites/default/files/images/daily/01-2016/29-beautiful-website-design-dunked-free-portfolio.preview.jpg");
+}
+
+a div.col-xs-6.project2 {
+  background-image: url("https://www.awwwards.com/awards/gallery/2015/09/6-web-design-trends-awwwards-image18.png");
+}
+
+a div.col-xs-6.project3 {
+  background-image: url("https://topdesigninspiration.com/wp-content/uploads/2016/08/hp-magic-words-sharing-750x413.jpg");
+}
+
+a div.col-xs-6.project4 {
+  background-image: url("http://media02.hongkiat.com/creative-portolio-designs/2-Brian-Rhinehart-Portfolio-Kineticshadows.jpg");
+}
+
+a div.col-xs-6.project1:hover {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ), url("http://webneel.com/daily/sites/default/files/images/daily/01-2016/29-beautiful-website-design-dunked-free-portfolio.preview.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100% 100%;
+}
+
+a div.col-xs-6.project2:hover {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ), url("https://www.awwwards.com/awards/gallery/2015/09/6-web-design-trends-awwwards-image18.png");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100% 100%;
+}
+
+a div.col-xs-6.project3:hover {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ), url("https://topdesigninspiration.com/wp-content/uploads/2016/08/hp-magic-words-sharing-750x413.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100% 100%;
+}
+
+a div.col-xs-6.project4:hover {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ), url("http://media02.hongkiat.com/creative-portolio-designs/2-Brian-Rhinehart-Portfolio-Kineticshadows.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100% 100%;
+}
+
+a div.col-xs-6 h2 {
+  color: white;
+  display: none;
+  padding-top: 60px;
+  text-decoration: none;
+}
+
+a div.col-xs-6 h2:hover {
+  opacity: 1;
+}
+
+a div.col-xs-6 img:hover {
+  opacity: 0.5;
+}
+
+/*--------------SLIDER BUTTONS */
+.slider {
   text-align: center;
 }
 
-.moreprojects button {
-  border: none;
-  background: none;
-  color: #80C892;
-  font-size: 28px;
-  opacity: 1;
-  outline: none;
-  text-decoration: none;
-  -webkit-animation-duration: 1.5s;
-}
-
-.moreprojects button:hover {
-  font-size: 32px;
-}
-
-div.moreprojects a {
+div.slider a {
+  margin: 0 6px;
   text-decoration: none;
 }
 
-div.moreprojects a i {
+div.slider a#four1 {
+  -webkit-animation-delay: 1.7s;
+}
+
+div.slider a#four2 {
+  -webkit-animation-delay: 1.85s;
+}
+
+div.slider a#four3 {
+  -webkit-animation-delay: 2s;
+}
+
+div.slider a i {
   color: #80C892;
-  display: none;
-  margin: 0 7px;
 }
 
-div.moreprojects a.active i.fa-circle-o {
-  background-color: blue;
-}
-
-div.projects2 {
-  display: none;
-}
 
 
 /*---------------------------------MEDIA QUERIES -----------*/

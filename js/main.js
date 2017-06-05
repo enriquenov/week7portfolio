@@ -1,21 +1,24 @@
-$("button.more").mouseenter(function() {
-  $(this).addClass('animated tada');
+// ------------ PROJECTS EFFECT -----------
+$("div.col-xs-6.project1").hover(function() {
+  $("h2.title1").show();
+}, function() {
+  $("h2.title1").hide();
 });
 
-$("button.more").mouseleave(function() {
-  $(this).removeClass('animated tada');
-
+$("div.col-xs-6.project2").hover(function() {
+  $("h2.title2").show();
+}, function() {
+  $("h2.title2").hide();
 });
 
-$("button.more").click(function() {
-  $("button.more").hide();
-  $("div.moreprojects i").fadeIn(1500);
+$("div.col-xs-6.project3").hover(function() {
+  $("h2.title3").show();
+}, function() {
+  $("h2.title3").hide();
 });
 
-
-// carousel features
-
-$("#four2").click(function() {
-  // $(this).removeClass("fa-circle-o");
-  // $(this).addClass("fa-circle");
+$("div.col-xs-6.project4").hover(function() {
+  $("h2.title4").show();
+}, function() {
+  $("h2.title4").hide();
 });
