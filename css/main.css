@@ -13,29 +13,50 @@ body {
 div.greeting p {
   margin: 240px 64px 0;
   font-size: 21px;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 0s;
+  /*-webkit-animation-duration: 0.0s;
+  -webkit-animation-delay: 0s;*/
 }
 
 .jumbotron {
   background-color: snow;
 }
 
-div.jumbotron h1 span {
+div.jumbotron div.changeable {
+  border-right: 0.08em solid dimgrey;
   color: coral;
+  display: inline-block;
+  font-size: 63px;
   font-weight: bold;
   letter-spacing: 0.02em;
+  line-height: 48px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: type 1s steps(8, end), blink-caret 1s ease-in-out infinite;
+  -webkit-animation-delay: 0.02s;
+}
+
+/*The typing efect */
+@keyframes type {
+  from {width: 0}
+  to {width: 47%}
+}
+
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% {border-color: dimgrey;}
 }
 
 .jumbotron h1 {
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
+  display: inline-block;
+  /*-webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.2s;*/
 }
 
 .jumbotron p {
   font-weight: 400;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1.2s;
+  /*-webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;*/
 }
 
 ul.sidebar {
@@ -47,8 +68,8 @@ ul.sidebar li {
   list-style: none;
   margin: 0 0 80px;
   text-decoration: none;
-  -webkit-animation-duration: 1.1s;
-  -webkit-animation-delay: 1.8s;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
 }
 
 ul.sidebar li.right1 {
@@ -105,12 +126,96 @@ ul.sidebar li.right5 a:hover {
   color: #BE6139;
 }
 
+
+/*---------------------------------ABOUT PAGE -----------*/
+
+div.about-me {
+  margin-top: 100px;
+}
+
+div.col-md-5 {
+  text-align: center;
+}
+
+div img.myself {
+  border: 3px solid azure;
+  border-radius: 50%;
+  height: auto;
+  width: 70%;
+}
+
+div.col-md-7 p {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.skills {
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-name {
+  margin: 10px 0 0;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 14px;
+  margin: 25px 0;
+  width: 100%;
+}
+
+.skill {
+  border-radius: 14px;
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+  line-height: 28px;
+  width: 20%;
+}
+
+.html {
+  background-color: #F1A230;
+}
+
+.css {
+  background-color: #B29BD1;
+}
+
+.javascript {
+  background-color: #963D3C;
+}
+
+.angular {
+  background-color: #3987BE;
+}
+
+.php {
+  background-color: #47D16A;
+}
+
+.swift {
+  background-color: #CCAC00;
+}
+
+.photoshop {
+  background-color: #44A3AE;
+}
+
+.illustrator {
+  background-color: #F16B30;
+}
+
+
 /*----------------------------------------- PROJECTS */
 
 div.projects1 {
   margin-top: 120px;
-  -webkit-animation-duration: 2.3s;
-  -webkit-animation-delay: 0.1s;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-delay: 0s;
 }
 
 div.col-xs-6 {
@@ -217,96 +322,136 @@ div.slider a {
 }
 
 div.slider a#four1 {
-  -webkit-animation-delay: 1.7s;
+  -webkit-animation-delay: 0.6s;
 }
 
 div.slider a#four2 {
-  -webkit-animation-delay: 1.85s;
+  -webkit-animation-delay: 0.7s;
 }
 
 div.slider a#four3 {
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 0.8s;
 }
 
 div.slider a i {
   color: #E1BC6F;
 }
 
-/*---------------------------------ABOUT PAGE -----------*/
+/*------------------------------ PROCESS PAGE -----------*/
 
-div.about-me {
-  margin-top: 100px;
+.processes {
+  margin-top: 120px;
 }
 
-div img.myself {
-  border: 6px solid #80C892;
-  border-radius: 50%;
-  height: auto;
-  width: 70%;
+.process-img {
+  margin-bottom: 20px;
 }
 
-div p.pulse {
-  font-size: 20px;
-  letter-spacing: 0.05em;
-  margin-top: 30px;
+.process-img img.planning-img {
+  margin: 0 auto;
+  width: 91%;
 }
 
-.skills {
+.process-content {
+  height: 210px;
+  margin-bottom: 60px;
   text-align: center;
+}
+
+.process-content h2 {
+  font-size: 36px;
+}
+
+.process-content p {
   font-size: 20px;
+  line-height: 1.6em;
 }
 
-.skill-name {
-  margin: 10px 0 0;
+div.process-content.designing, img.designing-img {
+  -webkit-animation-delay: 0.6s;
 }
 
-.skill-bar {
-  width: 100%;
-  background-color: #ddd;
+/*-----------------------------CONTACT ME PAGE---------- */
+
+div.jumbotron.contact-me {
+  margin-top: 80px;
+  padding: 0;
 }
 
-.skill {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-
-  color: white;
-  text-align: right;
-  padding-right: 12px;
-  line-height: 25px;
-  width: 10%;
+div.jumbotron.contact-me h1 {
+  font-weight: bolder;
 }
 
-.html {
-  background-color: #4CAF50;
+div.jumbotron.contact-me p.caption {
+  margin: 20px 0 30px;
 }
 
-.css {
-  background-color: #2196F3;
+div.contact-email, div.contact-phone {
+  color: #BE6139;
+  display: inline-block;
+  margin-left: 6px;
+  padding-right: 80px;
 }
 
-.javascript {
-  background-color: coral;
+div.contact-email i {
+  display: inline-block;
+  font-size: 1.4em;
 }
 
-.angular {
-  background-color: gold;
+div.contact-email p {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  padding-left: 5px;
 }
 
-.php {
-  background-color: lightblue;
+div.contact-phone i {
+  display: inline-block;
+  font-size: 1.5em;
 }
 
-.swift {
-  background-color: purple;
+div.contact-phone p {
+  display: inline-block;
+  margin: 0;
+  padding-left: 5px;
 }
 
-.photoshop {
-  background-color: red;
+h1.drop-line {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
-.illustrator {
-  background-color: green;
+form.contact-form p {
+  color: #BE6139;
+  display: inline-block;
+  font-size: 18px;
+  /*font-weight: bold;*/
+  width: 40%;
+  margin-right: 9%;
 }
+
+form.contact-form input {
+  background-color: snow;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  width: 40%;
+  margin-right: 9%;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {
+  background-color: black;
+}
+
+form.contact-form textarea {
+  background-color: snow;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  width: 89%;
+}
+
 
 
 /*---------------------------------MEDIA QUERIES -----------*/

@@ -27,13 +27,13 @@ $(document).ready(function (){
 
   // ANIMATED SKILL BARS
 
-  $(".html").animate({width:'95%'},2200);
-  $(".javascript").animate({width:'60%'},2200);
-  $(".php").animate({width:'55%'},2200);
-  $(".photoshop").animate({width:'75%'},2200);
-  $(".css").animate({width:'80%'},2200);
-  $(".angular").animate({width:'70%'},2200);
-  $(".swift").animate({width:'85%'},2200);
-  $(".illustrator").animate({width:'100%'},2200);
+  $(".html").animate({width:'100%'},1200);
+  $(".javascript").animate({width:'92%'},1200);
+  $(".php").animate({width:'87%'},1200);
+  $(".photoshop").animate({width:'100%'},1200);
+  $(".css").animate({width:'96%'},1200);
+  $(".angular").animate({width:'87%'},1200);
+  $(".swift").animate({width:'96%'},1200);
+  $(".illustrator").animate({width:'100%'},1200);
 
 });
