@@ -11,13 +11,14 @@ body {
 /*-----------------------------------HOME---------*/
 
 div.greeting p {
-  margin: 240px 64px 0;
+  margin: 240px 5px 0;
   font-size: 21px;
   /*-webkit-animation-duration: 0.0s;
   -webkit-animation-delay: 0s;*/
 }
 
-.jumbotron {
+.container .jumbotron {
+  padding-left: 0;
   background-color: snow;
 }
 
@@ -54,9 +55,10 @@ div.jumbotron div.changeable {
 }
 
 .jumbotron p {
+  font-size: 20px;
   font-weight: 400;
-  /*-webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1.2s;*/
+  letter-spacing: 0.03em;
+  line-height: 36px;
 }
 
 ul.sidebar {
@@ -94,9 +96,9 @@ ul.sidebar li.right5 {
 
 ul.sidebar li a {
   border-left: 1px groove coral;
-  color: dimgrey;
+  color: #666;
   font-size: 25px;
-  opacity: 0.8;
+  opacity: 0.95;
   padding-left: 10px;
   padding-bottom: 4px;
 }
@@ -106,24 +108,24 @@ ul.sidebar li a:hover {
   text-decoration: none;
 }
 
-ul.sidebar li.right1 a:hover {
+ul.sidebar li.right1 a:hover, ul.sidebar li.right1 a.active {
   color: #F8C787;
 }
 
-ul.sidebar li.right2 a:hover {
+ul.sidebar li.right2 a:hover, ul.sidebar li.right2 a.active {
   color: #80C892;
 }
 
-ul.sidebar li.right3 a:hover {
+ul.sidebar li.right3 a:hover, ul.sidebar li.right3 a.active {
   color: #E1BC6F;
 }
 
-ul.sidebar li.right4 a:hover {
+ul.sidebar li.right4 a:hover, ul.sidebar li.right4 a.active {
   color: #3987BE;
 }
 
-ul.sidebar li.right5 a:hover {
-  color: #BE6139;
+ul.sidebar li.right5 a:hover, ul.sidebar li.right5 a.active {
+  color: coral;
 }
 
 
@@ -146,8 +148,9 @@ div img.myself {
 
 div.col-md-7 p {
   font-size: 20px;
-  letter-spacing: 0.05em;
-  margin-top: 20px;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  margin-top: 22px;
   width: 90%;
 }
 
@@ -210,10 +213,16 @@ div.col-md-7 p {
 }
 
 
-/*----------------------------------------- PROJECTS */
+/*----------------------------------- PROJECTS ------*/
+
+div.projects h1 {
+  font-size: 54px;
+  margin-top: 100px;
+  text-align: center;
+}
 
 div.projects1 {
-  margin-top: 120px;
+  margin-top: 40px;
   -webkit-animation-duration: 1.2s;
   -webkit-animation-delay: 0s;
 }
@@ -225,7 +234,7 @@ div.col-xs-6 {
 /*DELETE*/
 div.col-xs-6 a img {
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 90%;
 }
 /*DELETE*/
@@ -298,8 +307,10 @@ a div.col-xs-6.project4:hover {
 a div.col-xs-6 h2 {
   color: white;
   display: none;
+  font-size: 25px;
   letter-spacing: 0.1em;
-  padding-top: 60px;
+  line-height: 30px;
+  padding-top: 45px;
   text-decoration: none;
 }
 
@@ -339,12 +350,18 @@ div.slider a i {
 
 /*------------------------------ PROCESS PAGE -----------*/
 
+div.creative-process h1 {
+  font-size: 54px;
+  margin-top: 100px;
+  text-align: center;
+}
+
 .processes {
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 .process-img {
-  margin-bottom: 20px;
+  /*nothing*/
 }
 
 .process-img img.planning-img {
@@ -354,7 +371,7 @@ div.slider a i {
 
 .process-content {
   height: 210px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -379,18 +396,23 @@ div.jumbotron.contact-me {
 }
 
 div.jumbotron.contact-me h1 {
-  font-weight: bolder;
+  /*-webkit-animation-duration: 1.2s;*/
 }
 
 div.jumbotron.contact-me p.caption {
-  margin: 20px 0 30px;
+  font-weight: bold;
+  margin: 20px 0 12px;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.2s;
 }
 
 div.contact-email, div.contact-phone {
-  color: #BE6139;
+  color: coral;
   display: inline-block;
   margin-left: 6px;
   padding-right: 80px;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.2s;
 }
 
 div.contact-email i {
@@ -400,7 +422,7 @@ div.contact-email i {
 
 div.contact-email p {
   display: inline-block;
-  font-size: 18px;
+  font-size: 19px;
   margin: 0;
   padding-left: 5px;
 }
@@ -418,14 +440,21 @@ div.contact-phone p {
 
 h1.drop-line {
   font-size: 20px;
-  margin-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.2s;
+}
+
+form.contact-form {
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.2s;
 }
 
 form.contact-form p {
-  color: #BE6139;
+  color: coral;
   display: inline-block;
   font-size: 18px;
-  /*font-weight: bold;*/
   width: 40%;
   margin-right: 9%;
 }
@@ -435,23 +464,87 @@ form.contact-form input {
   border: none;
   border-bottom: 1px solid #ddd;
   display: inline-block;
-  width: 40%;
   margin-right: 9%;
-  margin-bottom: 15px;
-}
-
-::-webkit-input-placeholder {
-  background-color: black;
+  margin-bottom: 12px;
+  outline: none;
+  width: 40%;
 }
 
 form.contact-form textarea {
   background-color: snow;
   border: none;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  outline: none;
   width: 89%;
 }
 
+form.contact-form input:hover, form.contact-form textarea:hover {
+  border-bottom: 1px solid black;
+}
+
+form.contact-form input:focus, form.contact-form textarea:focus {
+  border-bottom: 1px solid black;
+}
+
+form.contact-form button.btn-3d-style {
+  background: none;
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 8px 40px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+
+
+/*--------------------CONTACT: FIXED SOCIAL MEDIA ICONS------ */
+
+div.social-media {
+  height: 400px;
+  left: 0;
+  position: fixed;
+  top: 360px;
+  width: 9%;
+}
+
+div.social-media ul {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+div.social-media ul li {
+  list-style: none;
+}
+
+div.social-media ul li a i {
+  background-color: coral;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.8em;
+  padding: 7px;
+  margin-bottom: 35px;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.2s;
+}
+
+div.social-media ul li a i.fa-codepen {
+  padding: 8.5px 8px;
+}
+
+div.social-media ul li a i.fa-linkedin {
+  padding: 8px 10px;
+}
+
+div.social-media ul li a i.fa-twitter {
+  padding: 9px 8px 7px 10px;
+}
+
+div.social-media ul li a i.fa-google-plus {
+  padding: 9px 6px 5px 10px;
+}
 
 
 /*---------------------------------MEDIA QUERIES -----------*/
